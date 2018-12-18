@@ -1,0 +1,9 @@
+<library path="libmap_annotation_tool">
+  <class name="Map_Annotation_Tool::MapAnnotationTool"
+         type="Map_Annotation_Tool::MapAnnotationTool"
+         base_class_type="rviz::Tool">
+    <description>
+      Tool to mimic 2D goal test.
+    </description>
+  </class>
+</library>
