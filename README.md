@@ -13,7 +13,7 @@ The map annotation tool facilitates annotating navigation maps efficiently and f
 - Reloading previously saved goal poses
 
 ### Installation
-Installing both plugins requires simply cloning this repository in the catkin workspace and building. For a workspace named catkin_ws in the root directory:
+Installing the plugin requires simply cloning this repository in the catkin workspace and building. For a workspace named catkin_ws in the root directory:
 ```sh
 $ cd ~/catkin_ws/src/
 $ git clone git@github.com:b-it-bots/map_annotation_tool.git
