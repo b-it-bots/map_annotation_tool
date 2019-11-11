@@ -1,9 +1,9 @@
 FROM bitbots/bitbots-common:kinetic
 
-LABEL maintainer="Argentina Ortega"
+LABEL maintainer="Sushant Vijay Chavan"
 
 WORKDIR /travis
-COPY ./ /travis/src/mas_navigation
+COPY ./ /travis/src/map_annotation_tool
 
 RUN . /opt/ros/mas_stable/setup.sh && \
     catkin config --init && \
@@ -12,4 +12,4 @@ RUN . /opt/ros/mas_stable/setup.sh && \
     rosdep update -qq && \
     rosdep install -q --from-paths src --ignore-src --rosdistro=kinetic -y && \
     rm -rf /var/lib/apt/lists/* && \
-    catkin build --no-status
+    catkin build
