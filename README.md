@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Sushant-Chavan/map_annotation_tool.svg?branch=master)](https://travis-ci.org/Sushant-Chavan/map_annotation_tool)
+
 ## Map Annotation Tool
 The Map Annotation Tool eases annotating simulated robot navigation maps with goal poses, by allowing storage, retrieval, and editing of navigational goal markers.
 
