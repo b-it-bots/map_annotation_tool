@@ -1,0 +1,7 @@
+version: '2'
+services:
+  travis:
+    build:
+      dockerfile: .travis/Dockerfile
+      context: .
+    image: bitbots/bitbots-map_annotation_tool:${TRAVIS_COMMIT}
