@@ -10,6 +10,9 @@
   <author email="sushant.chavan@inf.h-brs.de">Sushant Vijay Chavan</author>
   <author email="ahmed.abdelrahman@inf.h-brs.de">Ahmed Faisal Abdelrahman</author>
 
+  <maintainer email="sushant.chavan@inf.h-brs.de">Sushant Vijay Chavan</maintainer>
+  <maintainer email="ahmed.abdelrahman@inf.h-brs.de">Ahmed Faisal Abdelrahman</maintainer>
+
   <buildtool_depend>catkin</buildtool_depend>
   <build_depend>roscpp</build_depend>
   <build_depend>rospy</build_depend>

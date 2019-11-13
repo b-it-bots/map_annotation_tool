@@ -1,0 +1,29 @@
+sudo: required
+
+services:
+  - docker
+
+language: cpp
+
+env:
+  global:
+    - COMPOSE_VERSION: 1.22.0
+    - CONTAINER_RELEASE_IMAGE: bitbots/bitbots-map_annotation_tool:$TRAVIS_BRANCH
+
+before_install:
+  - sudo rm /usr/local/bin/docker-compose
+  - sudo curl -L https://github.com/docker/compose/releases/download/1.22.0/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+  - sudo chmod +x /usr/local/bin/docker-compose
+  - docker-compose -v
+
+
+stages:
+  - build
+  - test
+
+
+jobs:
+  include:
+    - stage: build
+      script:
+        - docker-compose build travis
